@@ -147,3 +147,33 @@ function makeNegative(num) {
 function makeNegative(num) {
     return num < 0 ? num : -num;
 }
+
+
+// Find the smallest integer in the array
+// https://www.codewars.com/kata/55a2d7ebe362935a210000b2/train/javascript
+
+// approach 1
+class SmallestIntegerFinder {
+    findSmallestInt(ary){
+      let smallInt;
+      for(let i = 0; i < ary.length; i++){
+        const individualNum = ary[i];
+        
+        if(i === 0){
+          smallInt = individualNum;
+        }
+        
+        if(individualNum < smallInt){
+          smallInt = individualNum;
+        }
+      }
+      return smallInt;
+    }
+}
+
+// approach 2
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+      return args.reduce((acc, prev) => (acc < prev) ? acc : prev);
+    }
+}
