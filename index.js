@@ -38,3 +38,18 @@ function getPlanetName(id){
 function solution(str){
     return str.split('').reverse().join('');  
 }
+
+// Even or Odd
+// https://www.codewars.com/kata/53da3dbb4a5168369a0000fe
+
+function even_or_odd(number) {
+    if (number%2 == 0) {
+      return "Even";
+    } else {
+      return "Odd";
+    }
+  }
+
+// Vowel Count
+// https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript
+
