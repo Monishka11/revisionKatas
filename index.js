@@ -53,3 +53,33 @@ function even_or_odd(number) {
 // Vowel Count
 // https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript
 
+// sleek one
+function getCount(str) {
+    return str.split('').filter(c => "aeiouAEIOU".includes(c)).length;
+   }
+
+// easy to understand for beginners
+function getCount(str) {
+    let vowelsCount = 0;
+    const arr1 = str.split("");
+    for(let i = 0; i<arr1.length; i++ ){
+      switch(arr1[i]){
+          case "a":
+          vowelsCount++;
+          break;
+          case "e":
+          vowelsCount++;
+          break;
+          case "i":
+          vowelsCount++;
+          break;
+          case "o":
+          vowelsCount++;
+          break;
+          case "u":
+          vowelsCount++;
+      }
+    }
+    
+    return vowelsCount;
+  }
