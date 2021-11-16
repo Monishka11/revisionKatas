@@ -6,6 +6,8 @@
 
 multiply = (a, b) => a * b;
 
+
+
 // Get planet name by id
 // https://www.codewars.com/kata/515e188a311df01cba000003
 
@@ -32,12 +34,16 @@ function getPlanetName(id){
     }
 }
 
+
+
 // Reversed strings
 // https://www.codewars.com/kata/5168bb5dfe9a00b126000018
 
 function solution(str){
     return str.split('').reverse().join('');  
 }
+
+
 
 // Even or Odd
 // https://www.codewars.com/kata/53da3dbb4a5168369a0000fe
@@ -49,6 +55,8 @@ function even_or_odd(number) {
       return "Odd";
     }
   }
+
+
 
 // Vowel Count
 // https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript
@@ -82,7 +90,9 @@ function getCount(str) {
     }
     
     return vowelsCount;
-  }
+}
+
+
 
 // jenny's secret message
 // https://www.codewars.com/kata/55225023e1be1ec8bc000390/train/javascript
@@ -98,6 +108,8 @@ function greet(name){
       return "Hello, my love!";
     return "Hello, " + name + "!";
 }
+
+
 
 // Is n divisible by x and y
 // https://www.codewars.com/kata/5545f109004975ea66000086/train/javascript
@@ -116,4 +128,22 @@ function isDivisible(n, x, y) {
 // approach 2
 function isDivisible(n, x, y) {
     return (n % x === 0 && n % y === 0) ? true : false;
+}
+
+
+// Return negative
+// https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
+
+// approach 1
+function makeNegative(num) {
+    if(num < 0){
+      return num;
+    } else{
+      return num * -1;
+    }
+}
+
+// approach 2
+function makeNegative(num) {
+    return num < 0 ? num : -num;
 }
