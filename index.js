@@ -53,12 +53,12 @@ function even_or_odd(number) {
 // Vowel Count
 // https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript
 
-// sleek one
+// approach 1
 function getCount(str) {
     return str.split('').filter(c => "aeiouAEIOU".includes(c)).length;
    }
 
-// easy to understand for beginners
+// approach 2
 function getCount(str) {
     let vowelsCount = 0;
     const arr1 = str.split("");
@@ -83,3 +83,18 @@ function getCount(str) {
     
     return vowelsCount;
   }
+
+// jenny's secret message
+// https://www.codewars.com/kata/55225023e1be1ec8bc000390/train/javascript
+
+// approach 1
+function greet(name){
+    return "Hello, " + (name == "Johnny" ? "my love" : name) + "!";
+}
+
+// approach 2
+function greet(name){  
+    if(name === "Johnny")
+      return "Hello, my love!";
+    return "Hello, " + name + "!";
+}
