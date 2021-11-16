@@ -98,3 +98,22 @@ function greet(name){
       return "Hello, my love!";
     return "Hello, " + name + "!";
 }
+
+// Is n divisible by x and y
+// https://www.codewars.com/kata/5545f109004975ea66000086/train/javascript
+
+// approach 1
+function isDivisible(n, x, y) {
+    const res1 = n/x;
+    const res2 = n/y;
+    if((res1 % 1 === 0) && (res2 % 1 === 0)){
+      return true;
+    } else{
+      return false;
+    }
+}
+
+// approach 2
+function isDivisible(n, x, y) {
+    return (n % x === 0 && n % y === 0) ? true : false;
+}
